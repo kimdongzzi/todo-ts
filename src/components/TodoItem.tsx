@@ -1,27 +1,23 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Todo } from "../models/todo";
+import { removeTodo, switchTodo } from "../redux/modules/todoSlice";
 import "./TodoItem.css";
 
 const TodoItem: React.FC<{
   item: Todo;
   isActive: boolean;
-  setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
-}> = ({ item, isActive, setTodos }) => {
+}> = ({ item, isActive }) => {
+  const dispatch = useDispatch();
+
   const onSwitchHandler = () => {
-    setTodos((prev) =>
-      prev.map((s) => {
-        if (s.id === item.id) {
-          return { ...s, isDone: !s.isDone };
-        } else {
-          return s;
-        }
-      })
-    );
+    dispatch(switchTodo({ ...item, id: item.id }));
   };
 
   const onRemoveHandler = () => {
-    setTodos((prev) => prev.filter((r) => r.id !== item.id));
+    dispatch(removeTodo({ ...item, id: item.id }));
   };
+
   return (
     <div className="todoitem">
       <div className="todoTextWrap">
