@@ -1,6 +1,7 @@
 # TodoList TypeScript로 Refactoring하기
 
-입문 TodoList를 리팩토링 했습니다.
+~~입문 TodoList를 리팩토링 했습니다.~~
+redux를 사용하여 리팩토링 했습니다.
 
 ##
 
