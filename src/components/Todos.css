@@ -1,0 +1,13 @@
+.todos {
+  padding: 30px;
+  margin-bottom: 10px;
+}
+.todosWrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.todos h3 {
+  margin-bottom: 20px;
+}
