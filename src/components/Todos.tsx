@@ -4,6 +4,7 @@ import TodoItem from "./TodoItem";
 import "./Todos.css";
 
 const Todos: React.FC<{
+  // setTodos 가져오기
   isActive: boolean;
   todos: Todo[];
   setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
