@@ -1,4 +1,4 @@
-# TodoList TypeScript로 Refectoring하기
+# TodoList TypeScript로 Refactoring하기
 
 입문 TodoList를 리팩토링 했습니다.
 
