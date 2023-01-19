@@ -10,8 +10,8 @@ interface Todo {
 
 const initialState = [
   {
-    title: "",
-    content: "",
+    title: "제목",
+    content: "내용",
     isDone: false,
     id: new Date().toISOString(),
   },

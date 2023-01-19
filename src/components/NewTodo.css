@@ -1,0 +1,36 @@
+.form {
+  width: 100%;
+  padding: 30px;
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-bottom: 1px solid #ccc;
+}
+.form-column {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.form-column label {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.form-column input {
+  padding: 5px 10px;
+  border: 0;
+}
+.form-column input:focus-visible {
+  outline: none;
+}
+
+.form button {
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 5px 10px;
+  background-color: transparent;
+}

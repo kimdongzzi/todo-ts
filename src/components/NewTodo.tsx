@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Todo } from "../models/todo";
 import { addTodo } from "../redux/modules/todoSlice";
+import "./NewTodo.css";
 
 const NewTodo: React.FC = () => {
   const dispatch = useDispatch();
